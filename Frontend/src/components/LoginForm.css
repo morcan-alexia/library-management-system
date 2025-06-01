@@ -1,0 +1,101 @@
+.form-card {
+  background-color: rgba(255, 255, 255, 0.75);  /* de la 0.85 la 0.75 */
+  backdrop-filter: blur(12px);  /* ușor mai accentuat */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.form-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.form-icon {
+  color: #B7372F;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.form-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #B7372F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #a52130;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.form-toggle {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.form-link {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-link:hover {
+  color: #1e40af;
+}
+
+.loan-table tr:hover {
+  background-color: #f0f4ff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+  
+  
+  

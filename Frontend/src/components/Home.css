@@ -1,0 +1,103 @@
+/* Fundal principal */
+.home-container {
+    background-image: url('../assets/background-library.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Caseta albă din mijloc */
+  .home-content {
+    background: rgba(255, 255, 255, 0.7); /* glassmorphism */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease;
+  }
+  
+  /* Titlu principal */
+  .home-content h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Linie decorativă sub titlu */
+  .divider {
+    width: 60px;
+    height: 4px;
+    margin: 16px auto;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  /* Paragraf descriptiv */
+  .home-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Buton pentru "Explorează cărțile" */
+  .explore-button {
+    padding: 12px 24px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #357ABD;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.7);
+  }
+  
+  /* Animație la apariție */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsivitate pentru ecrane mici */
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .home-content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .home-content p {
+      font-size: 1rem;
+    }
+  
+    .explore-button {
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+  }
+  
